@@ -22,7 +22,7 @@ function App() {
         <Carrossel/>
         </div>
         <footer>
-          <img src='./image/Logo-Youx-Lab.png' className="logo"/>
+          <img src='./image/Logo-Youx-Lab.png' className="logo" alt="Logo Youx Lab"/>
         </footer>
       </section>
     </div>
