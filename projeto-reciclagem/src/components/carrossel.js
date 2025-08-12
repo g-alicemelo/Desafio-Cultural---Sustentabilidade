@@ -13,20 +13,20 @@ const slide = [
     {
       imagem: "/image/lixeira_azul.png",
       titulo: "Lixeira Azul",
-      lixo: "",
-      descricao: ""
+      lixo: "Aenean eget eleifend enim. Phasellus id nisl urna. Integer ipsum mauris, pulvinar et mauris nec, laoreet convallis lorem",
+      descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu purus arcu. Etiam ac arcu eu augue vehicula hendrerit sit amet ut massa. Mauris luctus tempor ipsum nec efficitur. Quisque sit amet lorem id sapien ullamcorper vestibulum ut nec massa. Suspendisse in enim eget leo porta aliquet"
     },
     {
       imagem: "/image/lixeira_verde.png",
       titulo: "Lixeira Verde",
-      lixo: "",
-      descricao: ""
+      lixo: "Aenean eget eleifend enim. Phasellus id nisl urna. Integer ipsum mauris, pulvinar et mauris nec, laoreet convallis lorem",
+      descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu purus arcu. Etiam ac arcu eu augue vehicula hendrerit sit amet ut massa. Mauris luctus tempor ipsum nec efficitur. Quisque sit amet lorem id sapien ullamcorper vestibulum ut nec massa. Suspendisse in enim eget leo porta aliquet"
     },
     {
       imagem: "/image/lixeira_vermelha.png",
       titulo: "Lixeira Vermelha",
-      lixo: "",
-      descricao: ""
+      lixo: "Aenean eget eleifend enim. Phasellus id nisl urna. Integer ipsum mauris, pulvinar et mauris nec, laoreet convallis lorem",
+      descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu purus arcu. Etiam ac arcu eu augue vehicula hendrerit sit amet ut massa. Mauris luctus tempor ipsum nec efficitur. Quisque sit amet lorem id sapien ullamcorper vestibulum ut nec massa. Suspendisse in enim eget leo porta aliquet"
     }
   ];  
 
