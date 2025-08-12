@@ -62,9 +62,9 @@ export default function Carrossel () {
         >
           <div className="card">
             <div className="img-container">
-                <img src={slide[imagemEsquerda].imagem} className="imagemEsquerda" />
-                <img src={slide[imagemMeio].imagem} className="imagemMeio" />
-                <img src={slide[imagemDireita].imagem} className="imagemDireita" />
+                <img src={slide[imagemEsquerda].imagem} className="imagemEsquerda" alt={slide[imagemEsquerda].titulo} />
+                <img src={slide[imagemMeio].imagem} className="imagemMeio" alt={slide[imagemMeio].titulo}/>
+                <img src={slide[imagemDireita].imagem} className="imagemDireita" alt={slide[imagemDireita].titulo}/>
             </div>
             <div className="infoBox">
               <div className="navegacao">
