@@ -21,6 +21,9 @@ function App() {
         <div className='carousel'>
         <Carrossel/>
         </div>
+        <footer>
+          <img src='./image/Logo-Youx-Lab.png' className="logo"/>
+        </footer>
       </section>
     </div>
   );

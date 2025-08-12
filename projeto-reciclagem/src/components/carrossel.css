@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   font-family: Arial, sans-serif;
-  margin-top: 15%;
+  margin-top: 8%;
   max-width: 420px; /* para centralizar e limitar largura */
   margin-left: auto;
   margin-right: auto;
@@ -12,21 +12,28 @@
 
 .card {
   position: relative;
+  display: flex;
   background: white;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  width: 390px; /* mantém largura fixa para desktop */
+  width: 450px; /* mantém largura fixa para desktop */
   padding-top: 60px; /* espaço para imagem flutuante */
-  overflow: visible;
+  padding-bottom: 1rem; /* espaço flexível na base */
   box-sizing: border-box;
   margin-bottom: 2rem;
 }
 
+.card {
+  max-height: 2000px; /* algo bem alto */
+  transition: max-height 0.5s ease;
+}
+
+
 .img-container {
   position: absolute;
   display: flex;
-  top: -120px; /* imagem sobe sobre o card */
-  left: 26%; /* deslocada para esquerda */
+  top: -90px; /* imagem sobe sobre o card */
+  left: 28%; /* deslocada para esquerda */
   transform: translateX(-50%);
   width: 200px;
   height: 120px;
@@ -55,7 +62,7 @@
 }
 
 .infoBox p {
-  font-size: 14px;
+  font-size: 15px;
   color: #555;
 }
 
@@ -90,6 +97,7 @@ button:hover {
   width: 150px;
   object-fit: cover;
   border-radius: 8px; /* opcional para suavizar */
+  filter: blur(1px);
 }
 
 .imagemDireita {
@@ -97,7 +105,7 @@ button:hover {
   height: 160px;
   width: 150px;
   object-fit: cover;
-
+  filter: blur(1px);
   border-radius: 8px; /* opcional para suavizar */
 }
 
