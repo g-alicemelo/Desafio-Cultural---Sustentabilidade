@@ -1,0 +1,147 @@
+.carrossel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin-top: 15%;
+  max-width: 420px; /* para centralizar e limitar largura */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem; /* espaçamento lateral */
+}
+
+.card {
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 390px; /* mantém largura fixa para desktop */
+  padding-top: 60px; /* espaço para imagem flutuante */
+  overflow: visible;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.img-container {
+  position: absolute;
+  display: flex;
+  top: -120px; /* imagem sobe sobre o card */
+  left: 26%; /* deslocada para esquerda */
+  transform: translateX(-50%);
+  width: 200px;
+  height: 120px;
+}
+
+.infoBox {
+  padding: 15px;
+  text-align: center;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.infoBox h2 {
+  color: #ff416c;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.infoBox h3 {
+  margin-bottom: 20px;
+}
+
+.infoBox p {
+  font-size: 14px;
+  color: #555;
+}
+
+button {
+  border: none;
+  padding: 7px 16px;
+  background:none;
+  color: rgb(148, 148, 148);
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 0px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #f1f1f1;
+}
+
+.navegacao {
+  margin-top: 20px;
+}
+
+.imagemMeio {
+  height: 180px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.imagemEsquerda {
+  margin-right: -5px; /* ou -5px para sobrepor */
+  height: 160px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 8px; /* opcional para suavizar */
+}
+
+.imagemDireita {
+  margin-left: -5px; /* ou -5px */
+  height: 160px;
+  width: 150px;
+  object-fit: cover;
+
+  border-radius: 8px; /* opcional para suavizar */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+  .carrossel {
+    margin-top: 10vh;
+    max-width: 190%;
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 95vw;
+    padding-top: 98px;
+  }
+
+  .img-container {
+    width: 120px; /* fixo menor para manter proporção */
+    height: 72px; /* mantém proporção 5:3 */
+    top: -80px;
+    left: 14%;
+  }
+
+  .infoBox h2 {
+    font-size: 1.5rem;
+  }
+
+  .infoBox h3 {
+    font-size: 1rem;
+  }
+
+  .infoBox p,
+  button {
+    font-size: 0.9rem;
+  }
+
+  .imagemMeio {
+    width: 180px;
+    height: 190px;
+  }
+
+  .imagemDireita,
+  .imagemEsquerda {
+    width: 120px;
+    height: 150px;
+  }
+}
