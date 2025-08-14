@@ -47,19 +47,23 @@ export default function Carrossel () {
       // Atualiza índice
       const novoIndice = (indice + 1) % slide.length;
       setIndice(novoIndice);
+
+      imgMeioRef.current.style.zIndex = 3;
+      imgEsqRef.current.style.zIndex = 2;
+      imgDirRef.current.style.zIndex = 1;
   
       // Animação estilo "próximo"
       gsap.fromTo(imgMeioRef.current,
-        { x: 200, scale: 0.6, zIndex:1},
-        { x: 0, scale: 1, duration: 0.5, zIndex:1}
+        { x: 200, scale: 0.6},
+        { x: 0, scale: 1, duration: 0.5}
       );
       gsap.fromTo(imgEsqRef.current,
         { x: 100, scale: 0.6, zIndex:2 },
-        { x: 0, scale: 1, duration: 0.5, zIndex:2  }
+        { x: 0, scale: 1, duration: 0.5}
       );
       gsap.fromTo(imgDirRef.current,
         { x: -200, scale: 0.6, zIndex:3 },
-        { x: 0, scale: 1, duration: 0.5, zIndex:3 }
+        { x: 0, scale: 1, duration: 0.5, onStart: () => { imgDirRef.current.style.zIndex = 1;}}
       );
     };
   
